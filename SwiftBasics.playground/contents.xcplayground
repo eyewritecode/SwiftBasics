@@ -4,5 +4,6 @@
         <page name='Types'/>
         <page name='Variables'/>
         <page name='Operators'/>
+        <page name='Arrays'/>
     </pages>
 </playground>
