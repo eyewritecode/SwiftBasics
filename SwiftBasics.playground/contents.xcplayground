@@ -3,5 +3,6 @@
     <pages>
         <page name='Types'/>
         <page name='Variables'/>
+        <page name='Operators'/>
     </pages>
 </playground>
