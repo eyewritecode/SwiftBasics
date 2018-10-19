@@ -6,5 +6,7 @@
         <page name='Operators'/>
         <page name='Arrays'/>
         <page name='Collections'/>
+        <page name='Loops'/>
+        <page name='FizzBuzz'/>
     </pages>
 </playground>
