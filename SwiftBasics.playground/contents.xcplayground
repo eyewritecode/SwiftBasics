@@ -8,5 +8,6 @@
         <page name='Collections'/>
         <page name='Loops'/>
         <page name='FizzBuzz'/>
+        <page name='Functions'/>
     </pages>
 </playground>
