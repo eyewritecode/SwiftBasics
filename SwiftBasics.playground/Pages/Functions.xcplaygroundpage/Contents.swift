@@ -21,6 +21,7 @@ let area1 = newArea(length: 2, width: 22)
 // INTERNAL(second param) AND EXTERNA(first param)L PARAMETER NAMES
 
 func carpetCost(havingArea area: Int, carpetColor color: String) -> Int{
+    var price = 0
     switch color {
     case "gray":
         price = area * 1
@@ -31,7 +32,6 @@ func carpetCost(havingArea area: Int, carpetColor color: String) -> Int{
     default:
         price = 0
     }
-    
     return price
 }
 
