@@ -9,6 +9,7 @@
         <page name='Loops'/>
         <page name='FizzBuzz'/>
         <page name='Functions'/>
-        <page name='OOP'/>
+        <page name='Structs'/>
+        <page name='Classes'/>
     </pages>
 </playground>
