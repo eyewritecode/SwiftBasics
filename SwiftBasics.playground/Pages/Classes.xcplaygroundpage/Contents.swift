@@ -39,6 +39,15 @@ class Enemy{
     }
 }
 
+// Enemies
+
+class superEnemy: Enemy{
+    override init(x: Int, y: Int) {
+        super.init(x: x, y: y)
+        self.life = 50
+    }
+    
+}
 class Tower{
     let position: Point
     var range: Int = 1
@@ -69,7 +78,28 @@ class Tower{
     }
 }
 
+
+// INHERITANCE
+
+class LaserTower: Tower{
+    override init(x: Int, y: Int) {
+        super.init(x: x, y: y)
+        self.range = 100
+        super.strength = 100
+    }
+    
+    override func fire(at enemy: Enemy) {
+        while enemy.life >= 0{
+            enemy.decreaseLife(by: strength)
+        }
+        print("ENEMY DESTROYED")
+    }
+}
+
 let tower = Tower(x: 0, y: 0)
 let enemy = Enemy(x: 1, y: 1)
+let superenemy = superEnemy(x: 1, y: 1)
+let laserTower = LaserTower(x: 2, y: 2)
 
-tower.fire(at: enemy)
+tower.fire(at: superenemy)
+LaserTower.fire(at: superenemy)
