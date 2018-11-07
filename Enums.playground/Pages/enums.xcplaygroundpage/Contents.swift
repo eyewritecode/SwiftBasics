@@ -70,7 +70,24 @@ enum ColorComponent {
 
 ColorComponent.rgb(61.0, 120.1, 198.0, 1.0).color()
 
+// RAW VALUES
 
+enum Coin: Double {
+    case penny = 0.001
+    case nickel = 0.05
+    case dime = 0.1
+    case quarter = 0.025
+}
+
+let coins: [Coin] = [.penny, .nickel, .dime, .quarter, .quarter, .quarter]
+
+func sum(having coins: [Coin]) -> Double{
+    var total: Double = 0
+    for coin in coins {
+        total += coin.rawValue
+    }
+    return total
+}
 
 
 

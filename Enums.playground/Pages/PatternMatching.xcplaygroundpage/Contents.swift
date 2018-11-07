@@ -1,7 +1,7 @@
-//: [Previous](@previous)
+// Nil Coalescing operator
 
-import Foundation
+let firstName: String? = "James"
+let username = "007"
 
-var str = "Hello, playground"
-
-//: [Next](@next)
+let displayName = firstName ?? username
+print(displayName)
